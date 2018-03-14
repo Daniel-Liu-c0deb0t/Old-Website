@@ -6,16 +6,17 @@
 .parallax{
 	position: relative;
 	width: 100%;
-	height: 700%;
+	height: auto;
+	overflow: auto;
 }
 
 .parallax_inner{
-	position: absolute;
+	position: relative;
 	background-image: url("petal_background_svg.svg");
 	background-size: 70%;
 	background-repeat: repeat-y;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	background-position: center 0px;
 	transition: background-position 1s ease-out;
 }
@@ -26,20 +27,24 @@
 	background-size: 70%;
 	background-repeat: repeat-y;
 	width: 100%;
-	height: 100%;
+	top: 0;
+	bottom: 0;
 	background-position: center 0px;
 	transition: background-position 1s ease-out;
 }
 
 header{
+	position: sticky;
+	z-index: 2;
+	
+	top: 0px;
 	width: 100%;
-	height: 10%;
+	height: 10vh;
 	min-height: 50px;
 	padding: 10px 0px 10px 0px;
 	
-	border-color: transparent transparent #E5E5E5 transparent;
-	border-style: solid;
-	border-width: 0px 0px 2px 0px;
+	background-color: white;
+	box-shadow: 0px 5px 20px #E5E5E5;
 }
 
 .header_title{
@@ -54,7 +59,7 @@ header{
 .side_menu_intro_container{
 	width: 100%;
 	height: calc(100vh - 120px);
-	min-height: 300px;
+	min-height: 400px;
 	padding: 50px 0px 0px 0px;
 	
 	background-image: url(arrow_svg.svg);
@@ -66,8 +71,8 @@ header{
 }
 
 .side_menu{
-	width: 45%;
-	min-width: 400px;
+	width: 20%;
+	min-width: 200px;
 	height: 100%;
 	float: left;
 	list-style: none;
@@ -103,23 +108,46 @@ header{
 }
 
 .intro{
+	position: relative;
+	float: right;
+	width: 60%;
+	min-width: 200px;
+	height: auto;
 	color: black;
-	width: 100%;
-	min-width: 300px;
-	height: 100%;
 }
 
-.intro_title{
-	padding: calc(100% / 3 - 75px) 20px 0 0;
+.intro a{
+	text-decoration: none;
 }
 
-.intro_highlight_title, .intro_highlighted{
+.intro_highlight_title{
 	text-align: right;
 	padding: 10px;
 }
 
+.intro_highlighted{
+	text-align: right;
+	padding: 10px;
+}
+
+.intro_image_container{
+	display: inline-block;
+	padding: 5px 0px 5px calc(100% - 480px);
+}
+
+.intro_image_small{
+	width: 150px;
+	height: 150px;
+}
+
+.intro_image_large{
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+}
+
 .content{
-	position: absolute;
+	position: relative;
 	width: 100%;
 	padding: 10px 0px 10px 0px;
 }
@@ -129,9 +157,13 @@ header{
 	text-decoration: none;
 }
 
+.content a:hover{
+	text-decoration: underline;
+}
+
 .content_block{
 	width: 70%;
-	margin: 100px 0 0 15%;
+	margin: 50px 0 50px 15%;
 	padding: 20px;
 	background-color: white;
 	box-shadow: 5px 5px 20px #E5E5E5, -5px -5px 20px #E5E5E5;
@@ -146,7 +178,6 @@ footer{
 	width: 100%;
 	height: 25%;
 	min-height: 100px;
-	float: bottom;
 	
 	box-shadow: 0px -5px 20px #E5E5E5;
 }
@@ -169,7 +200,7 @@ footer{
 .separator{
 	width: 100%;
 	height: 100px;
-	padding: 100px 0 0 0;
+	padding: 50px 0 50px 0;
 }
 
 .title_font{
@@ -221,4 +252,51 @@ footer{
 	
 	opacity: 0;
 	transition: opacity 0.5s ease;
+}
+
+.gallery_container{
+	text-align: center;
+}
+
+.gallery{
+	display: inline-block;
+	margin: 20px;
+	width: 200px;
+	height: 250px;
+	border: 1px solid #E5E5E5;
+}
+
+.gallery:hover{
+	border: 1px solid #999999;
+}
+
+.gallery a{
+	color: black;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+
+.gallery a:hover{
+	text-decoration: none;
+}
+
+.gallery img{
+	width: auto;
+	max-width: 100%;
+	height: 75%;
+}
+
+.gallery_title{
+	text-align: center;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.options{
+	position: absolute;
+	top: 5px;
+	right: 20px;
+	font-size: 12px;
+	list-style: none;
 }

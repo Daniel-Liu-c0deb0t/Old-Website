@@ -6,15 +6,19 @@
 		<title>
 			c0deb0t's Website
 		</title>
-		
-		<header id = "home">
-			<div class = "header_title"><a href = "#home" class = "title_font">c0deb0t</a></div>
-		</header>
 	</head>
 	<body>
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 		<script src = "index.js"></script>
+		
+		<header>
+			<div class = "header_title"><a href = "#home" class = "title_font">c0deb0t</a></div>
+			<ul class = "options body_font">
+				<li class = "toggle_parallax"><label><input type = "checkbox" checked>Show parallax effect? (Turn off to reduce lag)</label></li>
+				<li class = "toggle_flowers"><label><input type = "checkbox" checked>More pretty flowers? (Please don't turn off)</label></li>
+			</ul>
+		</header>
 		
 		<div class = "overlay">
 			<div class = "overlay_title">c0deb0t</div>
@@ -25,7 +29,7 @@
 			</div>
 		</div>
 		
-		<div class = "parallax">
+		<div class = "parallax" id = "home">
 			<div class = "parallax_foreground"></div>
 			
 			<div class = "parallax_inner">
@@ -39,10 +43,16 @@
 						<li><a href = "#experiences"><img src = "rose_icon_svg.svg" class = "side_menu_icon">Experiences</a></li>
 					</ul>
 					<div class = "intro">
-						<div class = "intro_title">
-							<h1 class = "title_font intro_highlight_title">New Coding Project!</h1>
-							<h1 class = "title_font intro_highlighted">Highlighted</h1>
-						</div>
+						<h1 class = "title_font intro_highlighted">Highlighted</h1>
+						<a href = "https://c0deb0t.wordpress.com/2017/09/10/handwriting-recognition-with-mnist-data-in-java/">
+							<div class = "intro_image_container">
+								<img src = "https://c0deb0t.files.wordpress.com/2017/09/mnist_3.jpg?w=235&h=206&zoom=2" class = "intro_image_small">
+								<br>
+								<img src = "https://c0deb0t.files.wordpress.com/2017/09/mnist_2.jpg?w=235&h=206&zoom=2" class = "intro_image_small">
+							</div>
+							<img src = "https://c0deb0t.files.wordpress.com/2017/09/mnist_1.jpg" class = "intro_image_large">
+							<h1 class = "title_font intro_highlight_title">Handwriting Recognition With MNIST Data in Java</h1>
+						</a>
 					</div>
 				</div>
 				<div class = "content">
@@ -51,8 +61,8 @@
 						<p class = "body_font">
 							This website was created as a cool, artistic side project.
 							It can also act like a cool graphical portfolio for my web design skills.
-							As such, only the front page exists and most links to blog 
-							posts goes to my other, actual site on Wordpress.
+							As such, only the front page exists and most links and images goes to my 
+							other, actual site on Wordpress. Visit it at <a href = "https://c0deb0t.wordpress.com/">c0deb0t.wordpress.com</a>.
 						</p>
 						<br>
 						<p class = "body_font">
@@ -60,7 +70,9 @@
 							JQuery was used to make JavaScripting easier. Font Awesome was 
 							also used for some icons. Images found on Pexels were used as 
 							inspiration. Google's Fonts API provided an easy way to 
-							incorporate cool fonts into the website.
+							incorporate cool fonts into the website. Google's CDN services were
+							wonderful because I don't need to download anything. Everything is served 
+							right to the user with just an HTML link.
 						</p>
 						<br>
 						<p class = "body_font">
@@ -92,6 +104,35 @@
 						<p class = "body_font">
 							Here are some recent projects I've worked on. Most of them are for fun.
 						</p>
+						
+						<div class = "gallery_container">
+							<div class = "gallery">
+								<a href = "https://c0deb0t.wordpress.com/2017/09/10/handwriting-recognition-with-mnist-data-in-java/">
+									<div class = "gallery_image">
+										<img src = "https://c0deb0t.files.wordpress.com/2017/09/mnist_1.jpg">
+									</div>
+									<div class = "gallery_title title_font">Handwriting Recognition With MNIST Data in Java</div>
+								</a>
+							</div>
+							
+							<div class = "gallery">
+								<a href = "https://c0deb0t.wordpress.com/2017/06/16/addition-python-machine-learning/">
+									<div class = "gallery_image">
+										<img src = "null_svg.svg" style = "background-color: #EFEFEF">
+									</div>
+									<div class = "gallery_title title_font">Addition! (Python + Machine Learning)</div>
+								</a>
+							</div>
+							
+							<div class = "gallery">
+								<a href = "https://c0deb0t.wordpress.com/2017/05/10/maze-solver/">
+									<div class = "gallery_image">
+										<img src = "https://c0deb0t.files.wordpress.com/2017/05/screenshot1.png?w=948">
+									</div>
+									<div class = "gallery_title title_font">Maze<br>Solver</div>
+								</a>
+							</div>
+						</div>
 					</div>
 					
 					<img src = "rose_full_yellow_svg.svg" class = "separator">
@@ -101,6 +142,35 @@
 						<p class = "body_font">
 							Sometimes, I write tutorials for things I've learned that can help others. Here are some recent tutorials.
 						</p>
+						
+						<div class = "gallery_container">
+							<div class = "gallery">
+								<a href = "https://c0deb0t.wordpress.com/2018/03/03/all-about-ranges-intervals-part-2/">
+									<div class = "gallery_image">
+										<img src = "null_svg.svg" style = "background-color: #EFEFEF">
+									</div>
+									<div class = "gallery_title title_font">All About Ranges/Intervals (Part 2)</div>
+								</a>
+							</div>
+							
+							<div class = "gallery">
+								<a href = "https://c0deb0t.wordpress.com/2018/02/27/all-about-ranges-intervals-part-1/">
+									<div class = "gallery_image">
+										<img src = "null_svg.svg" style = "background-color: #EFEFEF">
+									</div>
+									<div class = "gallery_title title_font">All About Ranges/Intervals (Part 1)</div>
+								</a>
+							</div>
+							
+							<div class = "gallery" title = "Using Dynamic Programming to Calculate Levenshtein Distance in Java">
+								<a href = "https://c0deb0t.wordpress.com/2017/08/13/using-dynamic-programming-to-calculate-levenshtein-distance-in-java/">
+									<div class = "gallery_image">
+										<img src = "null_svg.svg" style = "background-color: #EFEFEF">
+									</div>
+									<div class = "gallery_title title_font">Using DP to Calculate Levenshtein Distance...</div>
+								</a>
+							</div>
+						</div>
 					</div>
 					
 					<img src = "rose_full_svg.svg" class = "separator">
@@ -110,6 +180,35 @@
 						<p class = "body_font">
 							I also write about assorted experiences for fun. Recent experiences are shown here.
 						</p>
+						
+						<div class = "gallery_container">
+							<div class = "gallery" title = "My Java Machine Learning Library and Other Source Codes are Now on GitHub!">
+								<a href = "https://c0deb0t.wordpress.com/2017/08/24/my-java-machine-learning-library-and-other-source-codes-are-now-on-github/">
+									<div class = "gallery_image">
+										<img src = "https://c0deb0t.files.wordpress.com/2017/08/classification_example.jpg">
+									</div>
+									<div class = "gallery_title title_font">My Java Machine Learning Library and Other Source...</div>
+								</a>
+							</div>
+							
+							<div class = "gallery">
+								<a href = "https://c0deb0t.wordpress.com/2017/08/12/100-java-machine-learning-library/">
+									<div class = "gallery_image">
+										<img src = "null_svg.svg" style = "background-color: #EFEFEF">
+									</div>
+									<div class = "gallery_title title_font">100% Java Machine Learning Library</div>
+								</a>
+							</div>
+							
+							<div class = "gallery">
+								<a href = "https://c0deb0t.wordpress.com/2017/08/08/bioinformatics-tool-for-processing-dna-sequences/">
+									<div class = "gallery_image">
+										<img src = "null_svg.svg" style = "background-color: #EFEFEF">
+									</div>
+									<div class = "gallery_title title_font">Bioinformatics Tool for Processing DNA Sequences</div>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
