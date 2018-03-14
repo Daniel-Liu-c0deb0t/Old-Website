@@ -77,6 +77,9 @@ $(document).ready(function(){
 		});
 	});
 	
+	$(".toggle_parallax input").prop("checked", true);
+	$(".toggle_flowers input").prop("checked", true);
+	
 	$(".toggle_parallax input").on("click", function(e){
 		shouldParallax = !shouldParallax;
 	});
